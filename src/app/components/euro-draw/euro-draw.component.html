@@ -1,0 +1,22 @@
+<div>
+  <h1>Add Euro Draw</h1>
+</div>
+
+<div>
+  <form #newEuroDrawData="ngForm" (ngSubmit)="postNewEuroDraw(newEuroDrawData)">
+    <input type="text" #drawDate (ngModel)="drawDate" name="drawDate" id="drawDate" placeholder="Euro draw date">
+    <input type="number" #numberOne (ngModel)="numberOne" name="numberOne" id="numberOne" placeholder="Number ONE">
+    <input type="number" #numberTwo (ngModel)="numberTwo" name="numberTwo" id="numberTwo" placeholder="Number TWO">
+    <input type="number" #numberThree (ngModel)="numberThree" name="numberThree" id="numberThree" placeholder="Number Three">
+    <input type="number" #numberFour (ngModel)="numberFour" name="numberFour" id="numberFour" placeholder="Number Four">
+    <input type="number" #numberFive (ngModel)="numberFive" name="numberFive" id="numberFive" placeholder="Number FIVE">
+
+    <input type="number" #additionalOne (ngModel)="additionalOne" name="additionalOne" id="additionalOne" placeholder="Additional ONE">
+    <input type="number" #additionalTwo (ngModel)="additionalTwo" name="additionalTwo" id="additionalTwo" placeholder="Additional TWO">
+
+    <div>
+      <input type="submit" value="Add">
+    </div>
+
+  </form>
+</div>

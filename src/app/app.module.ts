@@ -8,6 +8,8 @@ import { UserComponent } from './components/user/user.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MaterialModule} from "./components/material/material.module";
 import { FooterComponent } from './components/footer/footer.component';
+import { EuroDrawComponent } from './components/euro-draw/euro-draw.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { FooterComponent } from './components/footer/footer.component';
     UserComponent,
     NavbarComponent,
     FooterComponent,
+    EuroDrawComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
