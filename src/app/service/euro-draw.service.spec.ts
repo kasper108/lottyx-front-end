@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
+import {EuroDrawService} from "./euro-draw.service";
 
-import { EuroDrawService } from './euro-draw.service';
 
 describe('EuroDrawService', () => {
   let service: EuroDrawService;

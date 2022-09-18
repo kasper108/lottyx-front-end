@@ -8,10 +8,9 @@ export class EuroDrawService {
 
   constructor(private http: HttpClient) { }
 
-  API = 'http://localhost:8080/api/v1/euro-draws'
+  API = "http://localhost:8080";
 
-  public addNewEuroDraw(newEuroDrawData: any){
-    return this.http.post(this.API, newEuroDrawData)
+  public saveNewOrEditEuroDraw(addNewOrEditEuroDrawForm: any){
+    return this.http.post(this.API + '/api/v1/euro-draw', addNewOrEditEuroDrawForm);
   }
-
 }

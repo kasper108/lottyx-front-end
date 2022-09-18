@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { EuroDrawViewComponent } from './euro-draw-view.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('EuroDrawViewComponent', () => {
+  let component: EuroDrawViewComponent;
+  let fixture: ComponentFixture<EuroDrawViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      declarations: [ EuroDrawViewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(EuroDrawViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

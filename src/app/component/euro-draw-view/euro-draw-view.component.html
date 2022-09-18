@@ -1,0 +1,48 @@
+<div>
+  <div>
+    <h1> ADD NEW / EDIT Euro Jackpot Draw</h1>
+  </div>
+
+  <div>
+    <form #addNewOrEditEuroDrawForm="ngForm" (ngSubmit)="addNewOrEditEuroDraw(addNewOrEditEuroDrawForm)">
+      <div>
+        <label for="drawDate">Draw date</label>
+        <input type="text" #drawDate (ngModel)="drawDate" name="drawDate" id="drawDate" placeholder="Draw Date">
+      </div>
+      <div>
+        <label for="numberOne">Number one:</label>
+        <input type="text" #numberOne (ngModel)="numberOne" name="numberOne" id="numberOne" placeholder="Number ONE">
+      </div>
+      <div>
+        <label for="numberTwo">Number two:</label>
+        <input type="text" #numberTwo (ngModel)="numberTwo" name="numberTwo" id="numberTwo" placeholder="Number TWO">
+      </div>
+      <div>
+        <label for="numberThree">Number three:</label>
+        <input type="text" #numberThree (ngModel)="numberThree" name="numberThree" id="numberThree" placeholder="Number THREE">
+      </div>
+      <div>
+        <label for="numberFour">Number four:</label>
+        <input type="text" #numberFour (ngModel)="numberFour" name="numberFour" id="numberFour" placeholder="Number FOUR">
+      </div>
+      <div>
+        <label for="numberFive">Number five:</label>
+        <input type="text" #numberFive (ngModel)="numberFive" name="numberFive" id="numberFive" placeholder="Number FIVE">
+      </div>
+
+      <div>
+        <label for="additionalOne">Additional one:</label>
+        <input type="text" #additionalOne (ngModel)="additionalOne" name="additionalOne" id="additionalOne"
+               placeholder="Additional ONE">
+      </div>
+      <div>
+        <label for="additionalTwo">Additional two:</label>
+        <input type="text" #additionalTwo (ngModel)="additionalTwo" name="additionalTwo" id="additionalTwo" placeholder="additional TWO">
+      </div>
+
+      <div>
+        <input type="submit" value="Add New / Update">
+      </div>
+    </form>
+  </div>
+</div>
