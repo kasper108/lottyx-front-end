@@ -1,0 +1,36 @@
+<div>
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Draw date</th>
+        <th>Num. 1</th>
+        <th>Num. 2</th>
+        <th>Num. 3</th>
+        <th>Num. 4</th>
+        <th>Num. 5</th>
+
+        <th>Add. 6</th>
+        <th>Add. 7</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let euroDraw of euroDrawsList">
+        <td>{{euroDraw.id}}</td>
+        <td>{{euroDraw.date}}</td>
+
+        <td>{{euroDraw.numberOne}}</td>
+        <td>{{euroDraw.numberTwo}}</td>
+        <td>{{euroDraw.numberThree}}</td>
+        <td>{{euroDraw.numberFour}}</td>
+        <td>{{euroDraw.numberFive}}</td>
+
+        <td>{{euroDraw.additionalOne}}</td>
+        <td>{{euroDraw.additionalTwo}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

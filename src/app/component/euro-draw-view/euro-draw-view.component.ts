@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {EuroDrawService} from "../../service/euro-draw.service";
 import {NgForm} from "@angular/forms";
+import {EuroDrawListComponent} from "../euro-draw-list/euro-draw-list.component";
 
 @Component({
   selector: 'app-euro-draw-view',
@@ -19,11 +20,25 @@ export class EuroDrawViewComponent implements OnInit {
       (resp) => {
         console.log(resp);
         addNewOrEditEuroDrawForm.reset();
+        // this.getAllEuroDraws();
       },
       (err) => {
         console.log(err);
       }
     );
   }
+
+  /*
+  public getAllEuroDraws(){
+    this.euroDrawService.findAllEuroDraws().subscribe(
+      (resp) => {
+        console.log(resp);
+      },
+      (err) =>{
+        console.log(err);
+      }
+    );
+  }
+*/
 
 }
