@@ -4,7 +4,7 @@
   </div>
 
   <div>
-    <form #addNewOrEditEuroDrawForm="ngForm" (ngSubmit)="addNewOrEditEuroDraw(addNewOrEditEuroDrawForm)">
+    <form class="" #addNewOrEditEuroDrawForm="ngForm" (ngSubmit)="addNewOrEditEuroDraw(addNewOrEditEuroDrawForm)">
       <div>
         <label for="drawDate">Draw date</label>
         <input type="text" #drawDate (ngModel)="drawDate" name="drawDate" id="drawDate" placeholder="Draw Date">
@@ -37,7 +37,7 @@
       </div>
       <div>
         <label for="additionalTwo">Additional two:</label>
-        <input type="text" #additionalTwo (ngModel)="additionalTwo" name="additionalTwo" id="additionalTwo" placeholder="additional TWO">
+        <input type="text" #additionalTwo (ngModel)="additionalTwo" name="additionalTwo" id="additionalTwo" placeholder="Additional TWO">
       </div>
 
       <div>
