@@ -17,7 +17,6 @@ export class EuroDrawListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   public getAllEuroDraws(){
     this.euroDrawService.findAllEuroDraws().subscribe(
       (resp) => {
@@ -26,6 +25,18 @@ export class EuroDrawListComponent implements OnInit {
         this.euroDrawsList = resp;
       },
       (err) =>{
+        console.log(err);
+      }
+    );
+  }
+
+  public removeEuroDraw(id: number){
+    this.euroDrawService.deleteEuroDraw(id).subscribe(
+      (resp) => {
+        console.log(resp);
+        this.getAllEuroDraws();
+      },
+      (err) => {
         console.log(err);
       }
     );
