@@ -20,25 +20,11 @@ export class EuroDrawViewComponent implements OnInit {
       (resp) => {
         console.log(resp);
         addNewOrEditEuroDrawForm.reset();
-        // this.getAllEuroDraws();
       },
       (err) => {
         console.log(err);
       }
     );
   }
-
-  /*
-  public getAllEuroDraws(){
-    this.euroDrawService.findAllEuroDraws().subscribe(
-      (resp) => {
-        console.log(resp);
-      },
-      (err) =>{
-        console.log(err);
-      }
-    );
-  }
-*/
 
 }

@@ -17,4 +17,9 @@ export class EuroDrawService {
   public findAllEuroDraws(){
     return this.http.get(this.API + '/api/v1/euro-draw');
   }
+
+  public deleteEuroDraw(id: number){
+    return this.http.delete(this.API + '/api/v1/euro-draw/' + id);
+  }
+
 }
